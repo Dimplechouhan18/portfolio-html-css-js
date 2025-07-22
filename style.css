@@ -1,0 +1,132 @@
+:root {
+  --primary-color: #74b9ff;
+  --accent-color: #55efc4;
+  --bg-color: #f9fbfd;
+  --text-color: #2d3436;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Top contact info */
+.top-contact {
+  background: var(--accent-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+header {
+  background: var(--primary-color);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--white);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+}
+
+.project-card {
+  background: var(--white);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid var(--accent-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background: var(--primary-color);
+  color: var(--white);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--accent-color);
+  color: #000;
+}
+
+footer {
+  background: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
